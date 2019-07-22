@@ -1,0 +1,92 @@
+global:
+  ALREADY-TELEPORTING: '&cYou are already teleporting!'
+  # When anyone tries to do /spawn or /hub but is already teleporting.
+  move-detect: true
+  # Detects if a Player moves.
+  PREFIX: '&0[&6HT&0]'
+  # HubThat commands prefix.
+  FIRSTRUN: true
+  # Do not Modify!
+  VERSION: 8.0
+  # Do not Modify!
+  MOVED: '&cYou moved! Teleportation cancelled.'
+  # When anyone tries to move when teleporting.
+  set-gamemode-on-join: false
+  # Set players' gamemode when they join the server. Should work with Multiverse.
+  gamemode: 0
+  # Chose which game mode to set players in. ignored if set-gamemode-on-join is set to false.
+  # 0 = survival
+  # 1 = creative
+  # 2 = adventure
+  # 3 = spectator
+  tp-hub-on-join: true
+  # Teleport players to the Hub when they join.
+  tp-hub-on-respawn: false
+  # If true, players will be respawned at the Hub. If false, players will be respawned at their world's spawn. respawn-handler must be true.
+  respawn-handler: true
+  # If true, HubThat will handle respawns.
+  world-related-chat: false
+  # If true, chat will be available to players whose world have the same spawn.
+hub:
+  delay: 5
+  # Teleport delay in seconds.
+  ONLY_PLAYERS: '&cOnly players can go to the hub!'
+  # When /hub has ran in console.
+  HUB_NOT_SET: '&cThe hub is not set.'
+  # When anyone tries to use /hub but the hub is not set.
+  DELAY_TEXT_WAIT: '&aWait&6 %sec% &asecond(s).'
+  # The waiting message.
+  TELEPORTED: '&aYou have been teleported to the hub.'
+  # When /hub is used succesfully.
+  NO_PERMISSIONS: '&cYou do not have permissions for this command.'
+  # When anyone hasn't permissions for the /hub command.
+sethub:
+  ONLY_PLAYERS: '&cOnly players can set the hub!'
+  # When /sethub has ran in console.
+  SET_ERROR: '&cSomething went wrong when setting the hub.'
+  # When there is an error when setting the Hub.
+  HUB_SUCCESS_1: '&aHub set succesfully in world &6%world%&a.'
+  # When the hub has set succesfully.
+  NO_PERMISSIONS: '&cYou do not have permissions for this command.'
+  # When anyone hasn't permissions for the /sethub command.
+spawn:
+  delay: 5
+  # Teleport delay in seconds.
+  outdated-spawn: '&cWARNING: This spawn is outdated. Update it by typing /setspawn.'
+  # When the spawn is made with a different/uncompatible version of HubThat.
+  ONLY_PLAYERS: '&cOnly players can go to the spawn!'
+  # When /spawn has ran in console.
+  NO_PERMISSIONS:  '&cYou do not have permissions for this command.'
+  # When anyone hasn't permissions for the /spawn command.
+  SPAWN_NOT_SET: '&cThe spawn is not set.'
+  # When the spawn is not set.
+  DELAY_TEXT_WAIT: '&aWait&6 %sec% &asecond(s).'
+  # The waiting message.
+  TELEPORTED: '&aYou have been teleported to the spawn.'
+  # When /spawn is used succesfully.
+setspawn:
+  ONLY_PLAYERS: '&cOnly players can set the spawn!'
+  # When /setspawn has ran in console.
+  SPAWN_SUCCESS_1: '&aSpawn set succesfully in world&6 %world%&a.'
+  # When the Spawn was set succesfully.
+  NO_PERMISSIONS: '&cYou do not have permissions for this command.'
+  # When anyone hasn't permissions for the /setspawn command.
+  SET_ERROR: '&cSomething went wrong when setting the spawn.'
+  # When there is an error when setting the Spawn.
+worldtp:
+  ONLY_PLAYERS: '&cOnly players can teleport!'
+  # When /worldtp has ran in console.
+  NO_PERMISSIONS: '&cYou do not have permissions for this command.'
+  # When anyone hasn't permissions for the /worldtp command.
+  NEEDED_ARGS: '&cWrite the world''s name!'
+  # When the command has no args.
+  UNKNOWN_WORLD: '&cThat world does not exist!'
+  # When the world is not existing.
+  TELEPORTED: '&aYou have been teleported to&6 %world%&a!'
+  # When teleported succesfully in a world.
+worldlist:
+  NO_PERMISSIONS: '&cYou do not have permissions for this command.'
+  # When anyone hasn't permissions for the /worldlist command.
+updates:
+  update-notify: true
+  # Do you want to be warned when the plugin has an update? [RECCOMENDED: TRUE]

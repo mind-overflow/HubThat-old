@@ -1,0 +1,42 @@
+name: HubThat
+version: 8.0
+author: mind_overflow
+main: net.mindoverflow.hubthat.Main
+commands:
+  hubthat:
+    description: Main Command for HubThat.
+  setspawn:
+    description: Set the spawn for a world at your location.
+  spawn:
+    description: Go to current world's Spawn
+  sethub:
+    description: Set the Hub of the Server.
+  hub:
+    description: Go to the Hub of the Server.
+  worldtp:
+    description: Go to a specific World.
+  worldlist:
+    description: List all the Worlds.
+permissions:
+  hubthat.spawn:
+    default: true
+  hubthat.hub:
+    default: true
+  hubthat.setspawn:
+    default: op
+  hubthat.sethub:
+    default: op
+  hubthat.nospawndelay:
+    default: op
+  hubthat.nohubdelay:
+    default: op
+  hubthat.gotoworld:
+    default: op
+  hubthat.listworlds:
+    default: op
+  hubthat.updates:
+    default: op
+  hubthat.reloadconfig:
+    default: op
+  
+  
